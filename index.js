@@ -1,5 +1,6 @@
 var stylus = require('stylus'),
-  nib = require('nib');
+  nib = require('nib'),
+  axis = require('axis-css');
 
 var getProperty = function(obj, key){
   key = key.replace(/\[(\w+)\]/g, '.$1').replace(/^\./, '');
@@ -25,6 +26,7 @@ var renderer = function(data, options, callback){
 
   stylus(data.text)
     .use(nib())
+    .use(axis())
     .use(defineConfig)
     .set('filename', data.path)
     .set('compress', config.compress)

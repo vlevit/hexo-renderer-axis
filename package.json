@@ -1,17 +1,18 @@
 {
-  "name": "hexo-renderer-stylus",
-  "version": "0.1.0",
-  "description": "Stylus renderer plugin for Hexo",
+  "name": "hexo-renderer-axis",
+  "version": "0.0.1",
+  "description": "Stylus renderer plugin for Hexo with axis support",
   "main": "index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hexojs/hexo-renderer-stylus.git"
+    "url": "https://github.com/vlevit/hexo-renderer-axis"
   },
   "bugs": {
-    "url": "https://github.com/hexojs/hexo-renderer-stylus/issues"
+    "url": "https://github.com/vlevit/hexo-renderer-axis/issues"
   },
   "keywords": [
     "hexo",
+    "axis",
     "stylus",
     "css",
     "style",
@@ -22,10 +23,11 @@
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "license": {
     "type": "MIT",
-    "url": "https://raw.github.com/tommy351/hexo/master/LICENSE"
+    "url": "https://raw.github.com/vlevit/hexo-renderer-axis/master/LICENSE"
   },
   "dependencies": {
     "stylus": "^0.44.0",
-    "nib": "^1.0.2"
+    "nib": "^1.0.2",
+    "axis-css": "^0.1.8"
   }
 }
