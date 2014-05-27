@@ -22,14 +22,15 @@ var defineConfig = function(style){
 };
 
 var renderer = function(data, options, callback){
-  var config = hexo.config.stylus || {};
+  var stylus_config = hexo.config.stylus || {};
+  var axis_config = hexo.config.axis || {};
 
   stylus(data.text)
     .use(nib())
-    .use(axis())
+    .use(axis({implicit: !!axis_config.implicit}))
     .use(defineConfig)
     .set('filename', data.path)
-    .set('compress', config.compress)
+    .set('compress', stylus_config.compress)
     .set('include css', true)
     .render(callback);
 };

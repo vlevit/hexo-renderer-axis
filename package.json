@@ -1,6 +1,6 @@
 {
   "name": "hexo-renderer-axis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stylus renderer plugin for Hexo with axis support",
   "main": "index",
   "repository": {
