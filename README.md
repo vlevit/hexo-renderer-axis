@@ -5,7 +5,7 @@ Add support for [Stylus] with [axis] and [nib]
 ## Install
 
 ``` bash
-$ npm install hexo-renderer-stylus --save
+$ npm install hexo-renderer-axis --save
 ```
 
 ## Options
